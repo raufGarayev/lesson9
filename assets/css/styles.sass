@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
+@import './variables'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+
+
+.header
+    padding: 40px 113px
+    @include centering
+    justify-content: space-between
+    nav
+        @include centering
+        gap: 40px
+        span
+            i
+                margin-left: 20px
+
+.promo
+    @include centering
+    padding: 0 113px
+    gap: 30px
+    &-left
+        width: 40%
+        h1
+            font-size: 4.5rem
+            /* width: 50% */
+            span
+                color: #FF8A56
+        p
+            font-size: 1.375rem
+            color: #666
+            /* width: 50% */
+            margin-top: 34px
+        &_btns
+            margin-top: 38px
+            &_call, &_dl
+                padding: 20px 30px
+                font-size: 1rem
+                border: none
+                cursor: pointer
+            &_call
+                background-color: #000
+                color: #fff
+                transition: all .3s ease-in-out
+                &:hover
+                    background-color: #fff
+                    outline: 1px solid #000
+                    color: #000
+                    font-weight: 500
+                    transition: all .3s ease-in-out
+            &_dl
+                background-color: transparent
+                &:hover i
+                    margin-left: 20px
+                    transition: all .3s ease-in-out
+                i
+                    margin-left: 10px
+                    transition: all .3s ease-in-out
